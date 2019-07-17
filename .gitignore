@@ -1,0 +1,3 @@
+.htpasswd
+responses/*
+!responses/.gitkeep
