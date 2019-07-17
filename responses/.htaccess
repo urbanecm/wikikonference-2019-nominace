@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Restricted Content"
+AuthUserFile /var/www/files.wikimedia.cz/wikikonference-2019-nominace/.htpasswd
+Require valid-user
