@@ -31,7 +31,7 @@ file_put_contents('responses/' . uniqid("response", true) . ".html", $html);
         }
     </style>
 
-    <title>Hello, world!</title>
+    <title>Nominace řečníků na Wikikonferenci 2019</title>
 </head>
 
 <body>
@@ -40,5 +40,16 @@ file_put_contents('responses/' . uniqid("response", true) . ".html", $html);
     </nav>
 
     <h1>Vaše odpověď byla úspěšně zaznamenána.</h1>
+
+    <footer class="container-fluid">
+        <hr>
+        <div class="row">
+            <div class="col-md-4">
+                <p>&copy; Wikimedia Česká republika, z.s.</p>
+            </div>
+            <div class="col-md-4 text-center"><a href="mailto:wikikonference@wikimedia.cz">wikikonference@wikimedia.cz</a></div>
+            <div class="col-md-4 text-right"><a href="https://github.com/urbanecm/wikikonference-2019-nominace">Zdrojový kód</a> (<a href="LICENSE">GNU GPL</a>)</div>
+        </div>
+    </footer>
 </body>
 </html>
