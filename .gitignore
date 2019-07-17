@@ -2,3 +2,4 @@
 responses/*
 !responses/.gitkeep
 !responses/.htaccess
+/config.yaml
