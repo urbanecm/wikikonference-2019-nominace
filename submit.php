@@ -11,7 +11,12 @@ $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
 // Store the response!
 $html = str_replace("@@response@@", $response, file_get_contents('layout.html'));
-file_put_contents('responses/' . uniqid("response", true) . ".html", $html);
+$id = uniqid("response", true);
+file_put_contents('responses/' . $id . ".html", $html);
+
+// Link the response!
+$token = md5($config['secret'] . $id);
+$link = "view.php?id=$id&token=$token";
 ?>
 
 <!doctype html>
@@ -40,6 +45,7 @@ file_put_contents('responses/' . uniqid("response", true) . ".html", $html);
     </nav>
 
     <h1>Vaše odpověď byla úspěšně zaznamenána.</h1>
+    <p>Můžete si ji <a href="<? $link ?>">zobrazit</a>.</p>
 
     <footer class="container-fluid">
         <hr>
