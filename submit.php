@@ -1,7 +1,7 @@
 <?php
 $response = file_get_contents("mail_response.html");
 foreach ($_POST as $key => $value) {
-    $response = str_replace("@@" . $key . "@@", $value, $response);
+    $response = str_replace("@@" . $key . "@@", htmlspecialchars($value), $response);
 }
 
 // Forward the response!
