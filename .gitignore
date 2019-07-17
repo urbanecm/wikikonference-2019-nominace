@@ -1,3 +1,4 @@
 .htpasswd
 responses/*
 !responses/.gitkeep
+!responses/.htaccess
