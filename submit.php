@@ -45,8 +45,10 @@ $link = "view.php?id=$id&token=$token";
         <a class="navbar-brand" href="#">Wikikonference 2019</a>
     </nav>
 
-    <h1>Vaše odpověď byla úspěšně zaznamenána.</h1>
-    <p>Můžete si ji <a href="<? $link ?>">zobrazit</a>.</p>
+    <div class="container">
+        <h1>Vaše odpověď byla úspěšně zaznamenána.</h1>
+        <p>Můžete si ji <a href="<? $link ?>">zobrazit</a>.</p>
+    </div>
 
     <footer class="container-fluid">
         <hr>
