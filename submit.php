@@ -15,6 +15,7 @@ $id = uniqid("response", true);
 file_put_contents('responses/' . $id . ".html", $html);
 
 // Link the response!
+$config = yaml_parse('config.yaml');
 $token = md5($config['secret'] . $id);
 $link = "view.php?id=$id&token=$token";
 ?>
