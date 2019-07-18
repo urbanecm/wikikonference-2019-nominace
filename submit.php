@@ -47,7 +47,7 @@ $link = "view.php?id=$id&token=$token";
 
     <div class="container">
         <h1>Vaše odpověď byla úspěšně zaznamenána.</h1>
-        <p>Můžete si ji <a href="<? $link ?>">zobrazit</a>.</p>
+        <p>Můžete si ji <a href="<?php echo $link; ?>">zobrazit</a>.</p>
     </div>
 
     <footer class="container-fluid">
