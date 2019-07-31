@@ -7,7 +7,7 @@ foreach ($_POST as $key => $value) {
 // Forward the response!
 $headers = "From: Wikikonference 2019 <wikikonference@wikimedia.cz>\r\n";
 $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-//mail("martin.urbanec@wikimedia.cz", "[Wikikonference 2019] Nominace témat a řečníků", $response, $headers);
+mail("martin.urbanec@wikimedia.cz", "[Wikikonference 2019] Nominace témat a řečníků", $response, $headers);
 
 // Store the response!
 $html = str_replace("@@response@@", $response, file_get_contents('layout.html'));
