@@ -1,4 +1,5 @@
 <?php
+die('Nominace již byly ukončeny.');
 $response = file_get_contents("mail_response.html");
 foreach ($_POST as $key => $value) {
     $response = str_replace("@@" . $key . "@@", htmlspecialchars($value), $response);
